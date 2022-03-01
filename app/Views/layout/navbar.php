@@ -1,27 +1,12 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">Auction</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item <?= $title === "Home" ? 'active' : ''; ?>">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item <?= $title === "About" ? 'active' : ''; ?>">
-                    <a class="nav-link" href="/pages/about">About</a>
-                </li>
-                <li class="nav-item <?= $title === "Review" ? 'active' : ''; ?>">
-                    <a class="nav-link" href="/pages/review">Review</a>
-                </li>
-            </ul>
-            <?php if (logged_in()) : ?>
-                <a href="/pages/profile" class="nav-link" type="button">My Profile</a>
-            <?php else : ?>
-                <a href="/login" class="btn btn-primary" type="button">LOGIN</a>
-                <a href="/register" class="btn btn-danger ml-3" type="button">REGISTER</a>
-            <?php endif; ?>
+<nav class="shadow-sm border-b bg-white sticky top-0 z-50">
+    <section class="flex justify-between max-w-4xl mx-5 lg:mx-auto items-center">
+        <div class="flex items-center space-x-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/4151/4151882.png" alt=".img" class="w-12 object-contain cursor-pointer" />
+            <h3 class="text-xl font-light">E-Commerce</h3>
         </div>
-    </div>
+        <div>
+            <button class="bg-orange-300 p-1 px-6 rounded-full font-semibold text-white">LOGIN</button>
+            <button class="border border-orange-300 p-1 px-6 rounded-full font-semibold text-orange-200">REGISTER</button>
+        </div>
+    </section>
 </nav>

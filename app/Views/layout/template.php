@@ -9,7 +9,11 @@
 </head>
 
 <body>
+    <?= $this->include("layout/navbar"); ?>
     <?= $this->renderSection("content"); ?>
+    <div class="absolute bottom-0">
+        <?= $this->include("layout/footer"); ?>
+    </div>
 </body>
 
 </html>
