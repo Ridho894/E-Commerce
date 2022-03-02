@@ -8,10 +8,10 @@
     <title><?= $title; ?> | E-Commerce</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <?= $this->include("layout/navbar"); ?>
     <?= $this->renderSection("content"); ?>
-    <div class="absolute bottom-0">
+    <div class="">
         <?= $this->include("layout/footer"); ?>
     </div>
 </body>
