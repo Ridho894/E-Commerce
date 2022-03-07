@@ -1,4 +1,4 @@
-<?= $this->extend("layout/template"); ?>
+<?= $this->extend("layout/tailwind_template"); ?>
 <?= $this->section("content"); ?>
 <main class="max-w-4xl mx-5 lg:mx-auto min-h-screen pt-5">
     <form action="" method="POST" autocomplete="off" class="relative text-gray-600 w-full">
