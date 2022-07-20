@@ -1,2 +1,0 @@
-sebelum mulai ketikkan
-'composer install' diterminal
